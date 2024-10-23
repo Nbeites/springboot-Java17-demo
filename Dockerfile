@@ -5,7 +5,9 @@ FROM openjdk:17-jdk-alpine
 LABEL maintainer="nm.beites@gmail.com"
 
 # Argument for the application name (passed during build time)
-ARG APP_NAME=your-app-name
+ARG APP_NAME=springboot-demo
+
+
 
 # Set the environment variables for the application (can be overridden at runtime)
 ENV APP_NAME=${APP_NAME}
