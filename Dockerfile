@@ -5,11 +5,13 @@ FROM openjdk:17-jdk-alpine
 LABEL maintainer="nm.beites@gmail.com"
 
 # Argument for the application name (passed during build time)
+
+
+#This is overriden by the configuration in jenkins
 ARG APP_NAME=springboot-demo
 
-
-
-# Set the environment variables for the application (can be overridden at runtime)
+# Set the environment variables for the application
+# (can be overridden at runtime)
 ENV APP_NAME=${APP_NAME}
 ENV JAVA_OPTS=""
 
